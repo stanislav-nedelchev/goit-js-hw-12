@@ -66,7 +66,7 @@ button {
   gap: 10px;
   border-radius: 8px;
   padding: 8px 16px;
-  width: 86px;
+  min-width: 86px;
   height: 40px;
   background-color: #4e75ff;
   border: none;
@@ -113,11 +113,11 @@ button:focus {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: 20px;
 }
 
-.gallery li {
-  width: calc((100% - 3 * 30px) / 4);
+.gallery > li {
+  width: calc((100% - 4 * 20px) / 5);
 }
 
 .gallery img {
@@ -183,4 +183,12 @@ button:focus {
   100% {
     transform: rotate(360deg);
   }
+}
+
+.load-more {
+  margin: 20px auto 0;
+}
+
+.is-hidden {
+  display: none;
 }
