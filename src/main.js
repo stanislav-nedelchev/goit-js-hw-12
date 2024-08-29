@@ -17,7 +17,7 @@ const onSearchFormSubmit = async event => {
   try {
     event.preventDefault();
     currentPage = 1;
-    searchedValue = searchFormEl.elements.user_query.value;
+    searchedValue = searchFormEl.elements.user_query.value.trim();
     if (!searchedValue) {
       iziToast.warning({
         message: 'Please enter a search term to begin your search',
